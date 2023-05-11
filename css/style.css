@@ -12,9 +12,11 @@
     --secondary-color: #b5ddff;
     --important-color: #fdc15f;
     --footer-color: #333333;
+    --text-color-gray: #475764;
     --px-sm: 20px;
     --px-ms: 40px;
     --font-size-sm: 16px;
+    --font-size-lg: 40px;
 }
 
 /* UTILITY */
@@ -73,6 +75,15 @@ a.btn-start {
     padding: 10px 15px;
 }
 
+.btn-blue {
+    background-color: var(--header-color);
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 25px;
+    display: block;
+    width: fit-content;
+}
+
 .open-menu {
     display: none;
 }
@@ -86,6 +97,17 @@ main {
 .specs {
     height: 100%;
 }
+.specs div {
+    text-align: center;
+}
+
+.specs h1 {
+    font-size: var(--font-size-lg);
+}
+
+.specs h1, h2 {
+    color: var(--header-color);
+}
 
 .row {
     flex-wrap: wrap;
@@ -97,7 +119,27 @@ main {
     background-color: var(--secondary-color);
     border-radius: 25px;
     flex-basis: 100%;
+    padding: 10px 15px 0px 15px;
 }
+
+.card div {
+    width: 100%;
+    text-align: left;
+}
+
+.big-card img {
+    max-width: 100%;
+    display: block;
+}
+
+.picture {
+    padding-top: 10px;
+}
+
+.big-card h2 {
+    color: var(--header-color);
+}
+
 
 /* STRATEGY SECTION */
 .strategy {
@@ -162,7 +204,7 @@ footer .container {
 /*      RESPONSIVE PART      */
 /*****************************/
 
-/* SCREEN @768x */
+/* SCREEN @768px */
 @media screen and (min-width: 768px) {
 
     .container {
@@ -239,6 +281,18 @@ footer .container {
     .hamburger {
         display: none;
     }
+
+    /* Specs section @992px */
+    .card div {
+        flex-basis: 50%;
+        text-align: left;
+    }
+
+    .card.big-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     /* Benefit section 992px */
     .benefit .card {
         flex-basis: calc((100% / 3) - 20px);
