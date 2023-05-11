@@ -11,6 +11,7 @@
     --primary-color: #9792e4;
     --secondary-color: #b5ddff;
     --important-color: #fdc15f;
+    --footer-color: #333333;
     --px-sm: 20px;
     --px-ms: 40px;
 }
@@ -118,15 +119,29 @@ main {
     text-align: center;
     height: 100%;
     background-color: var(--primary-color);
+    color: #fff;
+}
+
+.try .container {
+    width: 100%;
 }
 
 /* FOOTER */
+footer {
+    color: #fff;
+    height: 100%;
+    background-color: var(--footer-color);
+}
+
+footer .container {
+    width: 100%;
+}
 
 /*****************************/
 /*      RESPONSIVE PART      */
 /*****************************/
 
-/* MEDIA #768x */
+/* SCREEN @768x */
 @media screen and (min-width: 768px) {
 
     .container {
@@ -145,7 +160,7 @@ main {
         height: calc(100vh - 80px);
     }
 
-    /* Strategy section 768px */
+    /* Strategy section @768px */
     .strategy {
         height: calc(100vh - 80px);
     }
@@ -154,7 +169,7 @@ main {
         flex-basis: calc((100% / 2) - 20px);
     }
 
-    /* Partner section 768px */
+    /* Partner section @768px */
     .partner .container {
         text-align: center;
         flex-direction: column;
@@ -164,12 +179,12 @@ main {
         flex-basis: 100%;
     }
 
-    /* Benefit section 768px */
+    /* Benefit section @768px */
     .benefit .card {
         flex-basis: calc((100% / 2) - 20px);
     }
 
-    /* About section 978px */
+    /* About section @768px */
     .about {
         height: calc(100vh - 80px);
     }
@@ -177,8 +192,19 @@ main {
     .about .card {
         flex-basis: calc((100% / 2) - 20px);
     }
+
+    /* Try section @768px */
+    .try .container {
+        width: 500px;
+    }
+
+    /* Footer section @768px */
+    footer .container {
+        width: 500px;
+    }
+    
 }
-/* MEDIA #992px */
+/* SCREEN #992px */
 @media screen and (min-width: 992px) {
 
     .container {
