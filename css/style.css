@@ -4,3 +4,78 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* CUSTOM PROPERTIES */
+:root {
+    --header-color: #0084fd;
+    --primary-color: #9792e4;
+    --secondary-color: #b5ddff;
+    --important-color: #fdc15f;
+}
+
+/* UTILITY */
+.container {
+    min-width: 550px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    background-color: var(--header-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.open-menu {
+    display: none;
+}
+
+/* MAIN */
+main {
+    padding-top: 80px;
+}
+
+/* SPECS SECTION */
+
+/* STRATEGY SECTION */
+
+/* PARTNER SECTION */
+
+/* BENEFIT SECTION */
+
+/* ABOUT SECTION */
+
+/* TRY SECTION */
+
+/* FOOTER */
+
+/*****************************/
+/*      RESPONSIVE PART      */
+/*****************************/
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .open-menu {
+        display: initial;
+    }
+
+    .hamburger {
+            display: none;
+    }
+}
