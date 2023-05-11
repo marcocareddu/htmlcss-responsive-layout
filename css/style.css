@@ -95,7 +95,18 @@ main {
 }
 
 /* BENEFIT SECTION */
+.benefit {
+    height: 100%;
+    background-color: var(--primary-color);
+}
 
+.benefit .card {
+    background-color: white;
+}
+
+.benefit .container {
+    text-align: center;
+}
 /* ABOUT SECTION */
 
 /* TRY SECTION */
@@ -106,6 +117,7 @@ main {
 /*      RESPONSIVE PART      */
 /*****************************/
 
+/* MEDIA #768x */
 @media screen and (min-width: 768px) {
 
     .container {
@@ -142,8 +154,13 @@ main {
     .partner .card {
         flex-basis: 100%;
     }
-}
 
+    /* Benefit section 768px */
+    .benefit .card {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+}
+/* MEDIA #992px */
 @media screen and (min-width: 992px) {
 
     .container {
@@ -156,5 +173,9 @@ main {
 
     .hamburger {
         display: none;
+    }
+    /* Benefit section 992px */
+    .benefit .card {
+        flex-basis: calc((100% / 3) - 20px);
     }
 }
