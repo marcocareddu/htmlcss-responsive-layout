@@ -107,9 +107,18 @@ main {
 .benefit .container {
     text-align: center;
 }
+
 /* ABOUT SECTION */
+.about {
+    height: 100%;
+}
 
 /* TRY SECTION */
+.try {
+    text-align: center;
+    height: 100%;
+    background-color: var(--primary-color);
+}
 
 /* FOOTER */
 
@@ -189,5 +198,4 @@ main {
     }
 
     /* About section 992px */
-
 }
