@@ -159,6 +159,15 @@ main {
     .benefit .card {
         flex-basis: calc((100% / 2) - 20px);
     }
+
+    /* About section 978px */
+    .about {
+        height: calc(100vh - 80px);
+    }
+
+    .about .card {
+        flex-basis: calc((100% / 2) - 20px);
+    }
 }
 /* MEDIA #992px */
 @media screen and (min-width: 992px) {
@@ -178,4 +187,7 @@ main {
     .benefit .card {
         flex-basis: calc((100% / 3) - 20px);
     }
+
+    /* About section 992px */
+
 }
