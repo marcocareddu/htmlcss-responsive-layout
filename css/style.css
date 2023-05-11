@@ -11,12 +11,15 @@
     --primary-color: #9792e4;
     --secondary-color: #b5ddff;
     --important-color: #fdc15f;
+    --px-sm: 20px;
+    --px-ms: 40px;
 }
 
 /* UTILITY */
 .container {
     width: 100%;
     margin: 0 auto;
+    padding: 0px var(--px-ms);
 }
 
 .d-flex {
@@ -25,6 +28,14 @@
 
 ul li {
     list-style-type: none;
+}
+
+section {
+    padding: var(--px-ms) 0px;
+}
+
+h1, h2, h3, p {
+    padding: var(--px-sm) 0px;
 }
 
 /* HEADER */
@@ -38,7 +49,6 @@ header {
 .head-menu {
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 .open-menu {
@@ -52,9 +62,9 @@ main {
 
 /* SPECS SECTION */
 .specs {
-    padding: 40px 0px;
     height: 100%;
 }
+
 .row {
     flex-wrap: wrap;
     gap: 30px;
@@ -71,11 +81,18 @@ main {
 .strategy {
     height: 100%;
     background-color: var(--primary-color);
-    display: flex;
     align-items: center;
 }
 
 /* PARTNER SECTION */
+.partner .container {
+    text-align: center;
+    flex-direction: column;
+}
+
+.partner .card {
+    background-color: var(--primary-color);
+}
 
 /* BENEFIT SECTION */
 
@@ -90,24 +107,41 @@ main {
 /*****************************/
 
 @media screen and (min-width: 768px) {
+
     .container {
         width: 740px;
     }
     
-    .card:first-of-type {
+    .specs .card:first-of-type {
         flex-basis: calc(((100% /3) * 2) - 10px);
     }
 
     .card {
         flex-basis: calc((100% / 3) - 20px);
     }
+
     .specs {
         height: calc(100vh - 80px);
     }
+
+    /* Strategy section 768px */
     .strategy {
         height: calc(100vh - 80px);
     }
 
+    .strategy .card {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+
+    /* Partner section 768px */
+    .partner .container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .partner .card {
+        flex-basis: 100%;
+    }
 }
 
 @media screen and (min-width: 992px) {
