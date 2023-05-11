@@ -197,6 +197,22 @@ main {
     background-color: var(--primary-color);
 }
 
+.partner-card {
+    display: block;
+}
+
+.partner-card > div {
+    text-align: center;
+    color: #fff;
+}
+
+.partner-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
 /* BENEFIT SECTION */
 .benefit {
     height: 100%;
@@ -267,6 +283,16 @@ footer .container {
 
     .partner .card {
         flex-basis: 100%;
+    }
+
+    .partner-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .partner-card > div {
+        text-align: left;
     }
 
     /* Benefit section @768px */
