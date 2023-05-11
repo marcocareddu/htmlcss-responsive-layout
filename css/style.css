@@ -14,6 +14,7 @@
     --footer-color: #333333;
     --px-sm: 20px;
     --px-ms: 40px;
+    --font-size-sm: 16px;
 }
 
 /* UTILITY */
@@ -23,12 +24,20 @@
     padding: 0px var(--px-ms);
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .d-flex {
     display: flex;
 }
 
 ul li {
     list-style-type: none;
+    color: #fff;
+    padding: 0px var(--px-sm);
+    font-size: var(--font-size-sm);
+    font-family: 'Open Sans', sans-serif;
 }
 
 section {
@@ -37,6 +46,11 @@ section {
 
 h1, h2, h3, p {
     padding: var(--px-sm) 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* HEADER */
@@ -50,6 +64,13 @@ header {
 .head-menu {
     justify-content: space-between;
     align-items: center;
+}
+
+a.btn-start {
+    color: black;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
 }
 
 .open-menu {
