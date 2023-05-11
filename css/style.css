@@ -91,6 +91,13 @@ a.btn-start {
     padding: 10px;
 }
 
+.btn-purple {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
 .open-menu {
     display: none;
 }
@@ -221,6 +228,15 @@ main {
 
 .benefit .card {
     background-color: white;
+}
+
+.benefit-cards {
+    text-align: left;
+    padding: 40px;
+}
+
+.benefit-cards h1, h3 {
+    color: var(--primary-color);
 }
 
 .benefit .container {
