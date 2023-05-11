@@ -84,6 +84,13 @@ a.btn-start {
     width: fit-content;
 }
 
+.btn-round {
+    color: black;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+
 .open-menu {
     display: none;
 }
@@ -146,6 +153,38 @@ main {
     height: 100%;
     background-color: var(--primary-color);
     align-items: center;
+}
+
+.strategy-card-1 {
+    background: none;
+    color: #fff;
+}
+
+.strategy-box {
+    padding: 0px 80px;
+}
+
+.strategy-box .card:last-child {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.strategy-card-1 h2 {
+    color: #fff;
+}
+
+.strategy-card-1 > img {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.strategy-card-2 h2 {
+    color: currentColor;
+}
+
+.strategy-card-2 > img {
+    width: 100%;
 }
 
 /* PARTNER SECTION */
@@ -215,22 +254,10 @@ footer .container {
         flex-basis: calc(((100% /3) * 2) - 10px);
     }
 
-    .card {
+    .card:not(.strategy-card-1, .strategy-card-2){
         flex-basis: calc((100% / 3) - 20px);
     }
-
-    .specs {
-        height: calc(100vh - 80px);
-    }
-
     /* Strategy section @768px */
-    .strategy {
-        height: calc(100vh - 80px);
-    }
-
-    .strategy .card {
-        flex-basis: calc((100% / 2) - 20px);
-    }
 
     /* Partner section @768px */
     .partner .container {
@@ -283,6 +310,10 @@ footer .container {
     }
 
     /* Specs section @992px */
+    .specs {
+        height: calc(100vh - 80px);
+    }
+    
     .card div {
         flex-basis: 50%;
         text-align: left;
@@ -298,5 +329,22 @@ footer .container {
         flex-basis: calc((100% / 3) - 20px);
     }
 
-    /* About section 992px */
+    /* Strategy section @992px */
+    .strategy-box .card:last-child {
+        align-self: flex-end;
+    }
+
+    .strategy {
+        height: calc(100vh - 80px);
+    }
+
+    .strategy .card {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+
+    .strategy-card-2 > img {
+        width: 50%;
+    }
+
 }
+    /* About section 992px */
